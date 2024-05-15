@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+
+body {
+    background: url('texture.webp');
+    background-blend-mode: multiply;
+    background-color: rgba(128, 0, 128, 0.5);
+    color: #f8f8f8;
+    font-family: 'Merienda One', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.vignette {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, transparent, rgba(0, 0, 0, 0.4));
+    pointer-events: none;
+}
+.description-box {
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: justify;
+    margin: auto;
+    width: 75%;
+    margin-bottom: 2vh;
+    text-shadow: 1px 1px 3px white;
+    background: linear-gradient(to right, #b8860b, #a67c00);
+    color: #ffffff;
+}
+.content {
+    margin: auto;
+    width: 80%;
+    padding: 20px;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    border-radius: 50%; /* This will make the image oval */
+}
+.dropdown {
+    margin-bottom: 20px;
+}
+.dropdownButton {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 100%; /* Dynamic font size */
+    padding: 5px; /* Smaller size */
+    padding-right: 30px;
+    background: linear-gradient(to right, #b8860b, #a67c00);
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Merienda One', cursive;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.dropdownButton::after {
+    content: "\25BC"; /* Black down-pointing triangle */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.dropdownButton.active::after {
+    content: "\25B2"; /* Black up-pointing triangle */
+}
+
+
+.dropdownButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('texture.webp');
+    opacity: 0.2;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.dropdownContent {
+    display: none;
+    padding: 20px 20px;
+    background: #b8860b;
+    color: #f8f8ff;
+    font-weight: bold;
+    box-shadow: inset 0 0 10px #000000;
+    overflow: auto;
+    transition: max-height 0.2s ease-out;
+}
+
+
+#summonButton {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 20px auto;
+    background-color: #800080;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Merienda One', cursive;
+    font-size: 110%; /* Dynamic font size */
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popupContent {
+    background-color: #fdf5e6; /* Yellow-ish off-white */
+    color: #000000; /* Black */
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5); /* White inner glow */
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+        width: 100%;
+    }
+    img {
+        width: 70%;
+    }
+}
