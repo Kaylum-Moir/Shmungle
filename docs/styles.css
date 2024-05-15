@@ -2,8 +2,6 @@
 
 body {
     background: url('texture.webp');
-    background-blend-mode: multiply;
-    background-color: rgba(128, 0, 128, 0.5);
     color: #f8f8f8;
     font-family: 'Merienda One', cursive;
     margin: 0;
@@ -47,7 +45,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 15%;
+    width: 15vw;
     border-radius: 50%; /* This will make the image oval */
 }
 .dropdown {
@@ -175,5 +173,8 @@ img {
     }
     img {
         width: 70%;
+    }
+    body {
+        font-size: 18px;
     }
 }
