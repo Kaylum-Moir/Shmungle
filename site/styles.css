@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
 
 body {
-    background: url('texture.webp');
+    background: url('site/texture.webp');
     background-blend-mode: multiply;
     background-color: rgba(128, 0, 128, 0.5);
     color: #f8f8f8;
@@ -86,7 +86,7 @@ img {
     right: 0;
     bottom: 0;
     left: 0;
-    background: url('texture.webp');
+    background: url('site/texture.webp');
     opacity: 0.2;
     border-radius: 10px;
     z-index: -1;
