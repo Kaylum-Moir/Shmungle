@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
 
 body {
-    background: url('/texture.webp');
+    background: url('texture.webp');
     background-blend-mode: multiply;
     background-color: rgba(128, 0, 128, 0.5);
     color: #f8f8f8;
@@ -29,7 +29,8 @@ body {
     margin: auto;
     width: 75%;
     margin-bottom: 2vh;
-    text-shadow: 1px 1px 3px white;
+    text-align: center;
+    text-shadow: 1px 1px 2px white;
     background: linear-gradient(to right, #b8860b, #a67c00);
     color: #ffffff;
 }
@@ -37,12 +38,16 @@ body {
     margin: auto;
     width: 80%;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    width: 15%;
     border-radius: 50%; /* This will make the image oval */
 }
 .dropdown {
@@ -51,7 +56,7 @@ img {
 .dropdownButton {
     position: relative;
     cursor: pointer;
-    width: 100%;
+    width: 50vw;
     border: none;
     text-align: center;
     outline: none;
@@ -86,7 +91,7 @@ img {
     right: 0;
     bottom: 0;
     left: 0;
-    background: url('/texture.webp');
+    background: url('texture.webp');
     opacity: 0.2;
     border-radius: 10px;
     z-index: -1;
@@ -119,7 +124,7 @@ img {
     line-height: 50px;
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
     cursor: pointer;
-    margin-top: 10vh;
+    margin-top: 5vh;
     margin-bottom: 10vh;
 }
 
