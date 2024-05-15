@@ -19,7 +19,7 @@ var summonPopup = document.getElementById("summonPopup");
 var close = document.getElementsByClassName("close")[0];
 
 summonButton.onclick = function() {
-    summonPopup.style.display = "block";
+    summonPopup.style.display = "flex";
 }
 
 close.onclick = function() {
