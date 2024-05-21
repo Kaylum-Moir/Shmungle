@@ -55,6 +55,27 @@ body {
     left: 0;
     width: 5vh;
 }
+#taskbar-content-right {
+    width: 50%;
+    height: 100%;
+    right: 5px;
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 4px;
+}
+.system-icon {
+    display: flex;
+    background-size: 2.5vh;
+    background-position: center;
+    height: 100%;
+    right: 0;
+    width: 5vh;
+    color: white;
+    font-size: 2vh;
+    text-align: center;
+    align-items: center;
+}
 #desktop-container {
     width: 4vw;
     height: 95vh;
