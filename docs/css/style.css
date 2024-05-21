@@ -13,7 +13,7 @@ body {
     width: 100vw;
     height: 100vh;
     position: absolute;
-    background-image: url("../assets/login-wallpaper.png");
+    background-image: url("../assets/index/login-wallpaper.png");
     background-size: 200vh 200vh;
     background-position: center;
     filter: blur(24px);
@@ -28,7 +28,7 @@ body {
     top: 22vh;
 }
 #profile-photo-main {
-    background-image: url("../assets/shmungle-pfp.png");
+    background-image: url("../assets/index/shmungle-pfp.png");
     background-size: 180%;
     background-position: 50% 50%;
     width: 50%;

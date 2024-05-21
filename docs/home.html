@@ -2,9 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>ShmungOS Desktop</title>
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <script src="js/home.js" defer></script>
 </head>
 <body>
+<div id="content">
+    <div id="home-screen-wallpaper"></div>
+    <div id="taskbar-container">
+        <div id="taskbar-background"></div>
+        <div id="taskbar-content">
+            <div id="taskbar-content-left">
+                <div class="program-icon" style="background-image: url('assets/home/shmungos-menu.svg'); background-repeat: no-repeat;"></div>
+                <div class="program-icon" style="background-image: url('assets/home/search-wand.svg'); background-repeat: no-repeat;"></div>
+                <div class="program-icon" style="background-image: url('assets/home/file-explorer.svg'); background-repeat: no-repeat;"></div>
+            </div>
+        </div>
+    </div>
+    <div id="desktop-container">
+        <div class="desktop-icon-container">
+            <div class="desktop-icon-image" style="background-image: url('assets/home/recycling-bin.svg')"></div>
+            <div class="desktop-icon-text">Recycling Void</div>
+        </div>
 
+        <div class="desktop-icon-container">
+            <div class="desktop-icon-image" style="background-image: url('assets/home/locked-folder.svg')"></div>
+            <div class="desktop-icon-text">"Research"</div>
+        </div>
+
+        <div class="desktop-icon-container">
+            <div class="desktop-icon-image" style="background-image: url('assets/home/shmungle-chrome.svg')"></div>
+            <div class="desktop-icon-text">Shmungle Chrome</div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
