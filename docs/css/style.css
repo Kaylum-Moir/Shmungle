@@ -56,6 +56,7 @@ body {
     border: #989898 1px solid;
     outline: none;
     font-family: "Segoe UI Light";
+    font-size: 150%;
 }
 #profile-pin-box::placeholder {
     font-family: "Segoe UI Light";
