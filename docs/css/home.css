@@ -1,7 +1,8 @@
 :root {
     --window-border: #707070;
     --window-header: #2B2B2B;
-    --window-header-text: #AAAAAA;
+    --window-header-text: #c7c7c7;
+    --content-hover: rgba(255, 255, 255, 0.25);
 }
 body {
     font-family: "Segoe UI Light", sans-serif;
@@ -139,6 +140,7 @@ body {
     top: 50%;
     transform: translate(0, -50%);
     position: absolute;
+    cursor: default;
 }
 .window-header-button-container {
     width: 6vw;
@@ -163,4 +165,48 @@ body {
 #header-button-close:hover {
     background-color: #ff4024;
     color: white;
+}
+.window-content-container {
+    background-color: orange;
+    height: 93%;
+    width: 100%;
+}
+.window-menu-bar {
+    background-color: black;
+    width: 100%;
+    height: 3%;
+    border-bottom: var(--window-border) 1px solid;
+    position: relative;
+}
+.window-menu-bar-container {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.window-menu-button {
+    width: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    font-size: max(1.5vh);
+    color: white;
+}
+.window-menu-button:hover {
+    background-color: var(--content-hover);
+}
+#expand-button-decorative {
+    width: 2%;
+    height: 100%;
+    text-align: center;
+    cursor: default;
+    font-size: max(1.8vh);
+    color: white;
+    position: absolute;
+    right: 1%;
+}
+#expand-button-decorative:hover {
+    background-color: var(--content-hover);
 }
