@@ -3,6 +3,8 @@
     --window-header: #2B2B2B;
     --window-header-text: #c7c7c7;
     --content-hover: rgba(255, 255, 255, 0.25);
+    --window-content-background: #2B2B2B;
+
 }
 body {
     font-family: "Segoe UI Light", sans-serif;
@@ -167,12 +169,6 @@ body {
     background-color: #ff4024;
     color: white;
 }
-.window-content-container {
-    background-color: orange;
-    height: 89%;
-    width: 100%;
-    overflow-y: scroll;
-}
 .window-menu-bar {
     background-color: black;
     width: 100%;
@@ -295,4 +291,30 @@ body {
 }
 #search-box-icon:hover{
     background-color: var(--content-hover);
+}
+#quick-access-drawer {
+    background-color: black;
+    width: 15%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-right: var(--window-border) 1px solid;
+}
+#window-body-container {
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 88.75%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.window-content-container {
+    background-color: var(--window-content-background);
+    height: 100%;
+    width: 85%;
+    overflow-y: scroll;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: default;
 }
